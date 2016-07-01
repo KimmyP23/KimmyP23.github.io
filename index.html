@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Baseball</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -12,18 +13,19 @@
 		<li>I like the idea of linking the MLB website to allow users get more information about how the season is going so far.</li>
 		<li>Plus, they can check out what;s going with their favorite team!</li>
 	</ul>
+<hr>
 <div>
 	<table border="2">
 	<thead>
 		<tr>
-			<th>American League</th>
-			<th>National League</th>
+			<th class="league">American League</th>
+			<th class="league">National League</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><em>East</em></td>
-			<td><em>East</em></td>
+			<td class="direction"><em>East</em></td>
+			<td class="direction"><em>East</em></td>
 		</tr>
 		<tr>
 			<td>Baltimore Orioles</td>
@@ -46,8 +48,8 @@
 			<td>Atlanta Braves</td>
 		</tr>
 		<tr>
-			<td><em>Central</em></td>
-			<td><em>Central</em></td>
+			<td class="direction"><em>Central</em></td>
+			<td class="direction"><em>Central</em></td>
 		</tr>
 		<tr>
 			<td>Cleveland Indians</td>
@@ -70,8 +72,8 @@
 			<td>Cincinnati Reds</td>
 		</tr>
 		<tr>
-			<td><em>West</em></td>
-			<td><em>West</em></td>
+			<td class="direction"><em>West</em></td>
+			<td class="direction"><em>West</em></td>
 		</tr>
 		<tr>
 			<td>Texas Rangers</td>
@@ -96,9 +98,12 @@
 	</tbody>
 	</table>
 </div>
+<div class="map">
 <h2>MLB Map</h2>
 <img src="https://s-media-cache-ak0.pinimg.com/736x/b7/8d/cc/b78dcc29598d16ddb946e48649a135b2.jpg" alt="MLB Map">
 <p>[Thanks to Deacon Roots for <a href="https://s-media-cache-ak0.pinimg.com/564x/99/c4/61/99c4617b0cd3514b8ff7abab141905b6.jpg">MLB USA Map Puzzle</a>]</p>
+</div>
+<div class="image">
 <h2>Season Breakdown</h2>
 	<ol>
 		<li>Regular Season 
@@ -122,9 +127,10 @@
 		</ul>
 		</li>
 	</ol>
+</div>
 <div>
 <h2>Sign up for up-to-date Stats</h2>
-	<form action="success.html">
+	<form action="success.html" id="form">
 		<label for="first">First Name:</label>
 		<input id="first" type="text" name="first" placeholder="Jane" required>
 		<label for="last">Last Name:</label>
