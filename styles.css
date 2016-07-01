@@ -2,6 +2,7 @@ body {
 	background: url(http://americangraphicsco.com/wp-content/uploads/2015/10/Baseball-Ball-Clipart-150x150.jpg);
 	background-repeat: no-repeat;
 	background-position: 10% 30%;
+	max-width: 960px;
 }
 
 h1	{
@@ -61,3 +62,11 @@ hr {
 a:visited { 
     color: pink;
 }
+
+
+ @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 70%
+  }
+} 
+
